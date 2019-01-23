@@ -1,0 +1,52 @@
+page-home {
+  
+}
+
+
+.plots {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+#data,
+#random,
+#trained {
+  margin: 30px;
+}
+
+.caption {
+  font-weight: bold;
+}
+
+.coeff {
+  font-weight: normal;
+}
+
+/*  ---------------------------------- mnist -----------------------------------  */
+.tfjs-example-container {
+  width: calc(100vw - 600px);
+}
+
+canvas {
+  width: 100px;
+}
+
+.pred {
+  font-size: 30px;
+  width: 100px;
+}
+
+.pred-correct {
+  background-color: #00cf00;
+}
+
+.pred-incorrect {
+  background-color: red;
+}
+
+.pred-container {
+  display: inline-block;
+  width: 100px;
+  margin: 10px;
+}

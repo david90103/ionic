@@ -1,0 +1,97 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      TensorFlow.js with Ionic
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <div class='tfjs-example-container'>
+    <section class='title-area'>
+      <h1>TensorFlow.js: Fitting a curve to synthetic data</h1>
+      <p class='subtitle'>Train a model to learn the coefficients of a cubic function.</p>
+    </section>
+
+    <section>
+      <p class="section-head">Description</p>
+      <p>
+        This model learns to approximate the coefficients of a cubic funtion used to generate the points shown below
+        on the left.
+      </p>
+      <p>
+        See <a href="https://js.tensorflow.org/tutorials/fit-curve.html">this tutorial</a> for more details.
+      </p>
+    </section>
+
+    <section>
+      <p class="section-head">Input Data</p>
+      <div class="input-div">
+        <span>Iterations:</span>
+        <input id="iteration" />
+        <span>Learning rate:</span>
+        <input id="learnrate" />
+        <button id="start">start</button>
+      </div>
+      <div id="data">
+        <div class="caption">Original Data (Synthetic)</div>
+        <div class="caption">True coefficients: <span class='coeff'></span></div>
+        <div class="plot"></div>
+      </div>
+    </section>
+
+    <section>
+      <p class="section-head">Model Outputs</p>
+      <div class="with-cols">
+        <div id="random">
+          <div class="caption">Fit curve with random coefficients (before training)</div>
+          <div class="caption">Random coefficients:
+            <span class='coeff'></span>
+          </div>
+          <div class="plot"></div>
+        </div>
+        <div id="trained">
+          <div class="caption">Fit curve with learned coefficients (after training)</div>
+          <div class="caption">Learned coefficients:
+            <span class='coeff'></span>
+          </div>
+          <div class="plot"></div>
+        </div>
+      </div>
+    </section>
+
+    <h4>------------------------------------ mnist ------------------------------------</h4>
+
+    <section class='title-area'>
+      <h1>TensorFlow.js: Train MNIST with the Core API</h1>
+    </section>
+
+    <section>
+      <p class='section-head'>Description</p>
+      <p>
+        This examples demonstrates training a handwritten digit recognizer using a Convolutional Neural Network
+        implemented with TensorFlow.js' lower level API.
+      </p>
+      <p>The MNIST dataset is used as training data.</p>
+    </section>
+
+    <section>
+      <p class='section-head'>Status</p>
+      <div id="status">Loading data...</div>
+      <div id="message"></div>
+    </section>
+
+    <section>
+      <p class='section-head'>Test Samples</p>
+      <div id="images"></div>
+    </section>
+
+    <h4>------------------------------------ my model ------------------------------------</h4>
+    <p>Please input a integer.</p>
+    <input id="inputdata" />
+    <button id="myModelStart">Predict</button>
+    <h6 id="mymodelanswer"></h6>
+
+    <script src="index.ts"></script>
+  </div>
+</ion-content>
