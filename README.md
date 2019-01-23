@@ -7,7 +7,7 @@
 - cast spec variable into string when passing as parameter
 - put index.js(old) content in home.ts -> ngAfterViewInit(), make sure it runs after content load
 - fix ui, data module function call in home.ts (ex. generateData() -> data.generateData())
-- cast result from getElementById() to <HTMLInputElement> to get value property
+- cast result from getElementById() to HTMLInputElement to get value property
 - fix null element problem in ui.ts (remove element binding at init)
 * * *
 
